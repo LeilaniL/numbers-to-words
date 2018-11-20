@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\leila\\Desktop\\code-projects\\NumberToWord.Solution\\NumberToWord\\NumberToWord.csproj",
+  "TargetFramework": "netcoreapp1.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
