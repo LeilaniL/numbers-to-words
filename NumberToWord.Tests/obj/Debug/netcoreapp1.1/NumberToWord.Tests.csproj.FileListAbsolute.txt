@@ -1,0 +1,15 @@
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\bin\Debug\netcoreapp1.1\NumberToWord.Tests.deps.json
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\bin\Debug\netcoreapp1.1\NumberToWord.Tests.runtimeconfig.json
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\bin\Debug\netcoreapp1.1\NumberToWord.Tests.runtimeconfig.dev.json
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\obj\Debug\netcoreapp1.1\NumberToWord.Tests.csprojResolveAssemblyReference.cache
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\obj\Debug\netcoreapp1.1\NumberToWord.Tests.csproj.CoreCompileInputs.cache
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\obj\Debug\netcoreapp1.1\NumberToWord.Tests.AssemblyInfo.cs
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\bin\Debug\netcoreapp1.1\NumberToWord.Tests.dll
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\bin\Debug\netcoreapp1.1\NumberToWord.Tests.pdb
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\bin\Debug\netcoreapp1.1\NumberToWord.dll
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\bin\Debug\netcoreapp1.1\NumberToWord.pdb
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\obj\Debug\netcoreapp1.1\NumberToWord.Tests.dll
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord.Tests\obj\Debug\netcoreapp1.1\NumberToWord.Tests.pdb

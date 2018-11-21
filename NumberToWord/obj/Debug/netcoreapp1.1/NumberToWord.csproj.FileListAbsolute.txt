@@ -1,0 +1,8 @@
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord\bin\Debug\netcoreapp1.1\NumberToWord.deps.json
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord\bin\Debug\netcoreapp1.1\NumberToWord.dll
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord\bin\Debug\netcoreapp1.1\NumberToWord.pdb
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord\obj\Debug\netcoreapp1.1\NumberToWord.csprojResolveAssemblyReference.cache
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord\obj\Debug\netcoreapp1.1\NumberToWord.csproj.CoreCompileInputs.cache
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord\obj\Debug\netcoreapp1.1\NumberToWord.AssemblyInfo.cs
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord\obj\Debug\netcoreapp1.1\NumberToWord.dll
+C:\Users\leila\Desktop\code-projects\NumberToWord.Solution\NumberToWord\obj\Debug\netcoreapp1.1\NumberToWord.pdb
