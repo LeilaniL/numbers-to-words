@@ -17,10 +17,16 @@ namespace NumberToWord.Tests
             Assert.AreEqual("two", (newLookup.NumberConverter(newLookup.UserInput)));
         }
         [TestMethod]
-        public void NumberToWordConverter_LookupDoubleDigit_String()
+        public void NumberToWordConverter_LookupTeens_String()
         {
             NumberToWordConverter newLookup = new NumberToWordConverter (12);
             Assert.AreEqual("twelve", (newLookup.NumberConverter(newLookup.UserInput)));
+        }
+        [TestMethod]
+        public void NumberToWordConverter_LookupDoubleDigit_String()
+        {
+            NumberToWordConverter newLookup = new NumberToWordConverter (74);
+            Assert.AreEqual("seventy four", (newLookup.NumberConverter(newLookup.UserInput)));
         }
     }
 }

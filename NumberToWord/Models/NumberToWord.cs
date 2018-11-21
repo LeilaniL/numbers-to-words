@@ -19,7 +19,7 @@ namespace NumberToWord
             {8, "eight"},
             {9, "nine"},
             };
-             Dictionary<int, string> tensPlace = new Dictionary<int, string>
+             Dictionary<int, string> teens = new Dictionary<int, string>
         {
             {10, "ten"},
             {11, "eleven"},
@@ -30,7 +30,18 @@ namespace NumberToWord
             {16, "sixteen"},
             {17, "seventeen"},
             {18, "eighteen"},
-            {19, "nineteen"},
+            {19, "nineteen"}
+            };
+             Dictionary<int, string> tensPlaceValues = new Dictionary<int, string>
+        {
+            {2, "twen"},
+            {3, "thir"},
+            {4, "four"},
+            {5, "fif"},
+            {6, "six"},
+            {7, "seven"},
+            {8, "eight"},
+            {9, "nine"},
             };
 
         public NumberToWordConverter (int userInput)
@@ -42,9 +53,19 @@ namespace NumberToWord
                 if(lookupNumber<10)
                 {
                 return (singleNumbers[lookupNumber]);
-                } else
+                } else if(lookupNumber<20)
                 {
-                    return (tensPlace[lookupNumber]);
+                    return (teens[lookupNumber]);
+                } else if(lookupNumber<100)
+                {
+                    int ones = lookupNumber % 10;
+                    string onesPlace = singleNumbers[ones];
+                    int tens = lookupNumber / 10;
+                    string tensPlace = tensPlaceValues[tens];
+                    return (tensPlace + "ty " + onesPlace);
+                }else
+                {
+                    return "That number/'s out of range";
                 }
             }
     }
