@@ -11,10 +11,16 @@ namespace NumberToWord.Tests
     public class NumberToWordTest{
     
         [TestMethod]
-        public void NumberToWordConverter_LookupDictionaryValue_Int()
+        public void NumberToWordConverter_LookupSingleDigit_String()
         {
             NumberToWordConverter newLookup = new NumberToWordConverter (2);
             Assert.AreEqual("two", (newLookup.NumberConverter(newLookup.UserInput)));
+        }
+        [TestMethod]
+        public void NumberToWordConverter_LookupDoubleDigit_String()
+        {
+            NumberToWordConverter newLookup = new NumberToWordConverter (12);
+            Assert.AreEqual("twelve", (newLookup.NumberConverter(newLookup.UserInput)));
         }
     }
 }
