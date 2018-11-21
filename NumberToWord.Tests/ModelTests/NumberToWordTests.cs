@@ -13,8 +13,8 @@ namespace NumberToWord.Tests
         [TestMethod]
         public void NumberToWordConverter_LookupDictionaryValue_Int()
         {
-            NumberToWordConverter newLookup = new NumberToWordConverter ("zero");
-            Assert.AreEqual(0, (newLookup.NumberConverter(newLookup.UserInput)));
+            NumberToWordConverter newLookup = new NumberToWordConverter (2);
+            Assert.AreEqual("two", (newLookup.NumberConverter(newLookup.UserInput)));
         }
     }
 }
