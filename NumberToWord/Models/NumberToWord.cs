@@ -18,8 +18,8 @@ namespace NumberToWord
             {7, "seven"},
             {8, "eight"},
             {9, "nine"},
-            };
-             Dictionary<int, string> teens = new Dictionary<int, string>
+        };
+        Dictionary<int, string> teens = new Dictionary<int, string>
         {
             {10, "ten"},
             {11, "eleven"},
@@ -31,8 +31,8 @@ namespace NumberToWord
             {17, "seventeen"},
             {18, "eighteen"},
             {19, "nineteen"}
-            };
-             Dictionary<int, string> tensPlaceValues = new Dictionary<int, string>
+        };
+        Dictionary<int, string> tensPlaceValues = new Dictionary<int, string>
         {
             {2, "twen"},
             {3, "thir"},
@@ -40,9 +40,9 @@ namespace NumberToWord
             {5, "fif"},
             {6, "six"},
             {7, "seven"},
-            {8, "eight"},
+            {8, "eigh"},
             {9, "nine"},
-            };
+        };
 
         public NumberToWordConverter (int userInput)
         {
@@ -63,10 +63,25 @@ namespace NumberToWord
                     int tens = lookupNumber / 10;
                     string tensPlace = tensPlaceValues[tens];
                     return (tensPlace + "ty " + onesPlace);
+                }else if(lookupNumber<1000)
+                {
+                    int hundredsPlace = lookupNumber / 100;
+                    int tensPlace = (lookupNumber % 100) / 10;
+                    int onesPlace = (lookupNumber % 100) % 10;
+                    return (singleNumbers[hundredsPlace] + " hundred " + tensPlaceValues[tensPlace] + "ty " + singleNumbers[onesPlace]); 
                 }else
                 {
                     return "That number/'s out of range";
                 }
             }
+    }
+    public class Program
+    {
+        public static void Main()
+        {
+            int userInput = int.Parse(Console.ReadLine());
+            NumberToWordConverter newTest = new NumberToWordConverter(userInput);
+            Console.WriteLine(newTest.NumberConverter(newTest.UserInput));
+        }
     }
 }

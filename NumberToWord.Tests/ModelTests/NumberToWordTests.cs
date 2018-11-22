@@ -28,5 +28,11 @@ namespace NumberToWord.Tests
             NumberToWordConverter newLookup = new NumberToWordConverter (74);
             Assert.AreEqual("seventy four", (newLookup.NumberConverter(newLookup.UserInput)));
         }
+        [TestMethod]
+        public void NumberToWordConverter_LookupThreeDigit_String()
+        {
+            NumberToWordConverter newLookup = new NumberToWordConverter (374);
+            Assert.AreEqual("three hundred seventy four", (newLookup.NumberConverter(newLookup.UserInput)));
+        }
     }
 }
