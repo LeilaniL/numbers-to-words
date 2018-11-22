@@ -69,7 +69,14 @@ namespace NumberToWord
                     int tensPlace = (lookupNumber % 100) / 10;
                     int onesPlace = (lookupNumber % 100) % 10;
                     return (singleNumbers[hundredsPlace] + " hundred " + tensPlaceValues[tensPlace] + "ty " + singleNumbers[onesPlace]); 
-                }else
+                }else if (lookupNumber<10000)
+                {
+                    int thousandsPlace = lookupNumber / 1000;
+                    int hundredsPlace = (lookupNumber % 1000)/100;
+                    int tensPlace = ((lookupNumber % 1000) % 100)/10;
+                    int onesPlace = ((lookupNumber % 1000) % 100) % 10;
+                     return (singleNumbers[thousandsPlace] + " thousand " + singleNumbers[hundredsPlace] + " hundred " + tensPlaceValues[tensPlace] + "ty " + singleNumbers[onesPlace]);
+                }
                 {
                     return "That number/'s out of range";
                 }
