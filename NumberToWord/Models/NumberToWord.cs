@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace NumberToWord
 {
-  public class NumberToWordConverter
+    public class NumberToWordConverter
     {
         public int UserInput;
         Dictionary<int, string> singleNumbers = new Dictionary<int, string>
@@ -44,43 +44,20 @@ namespace NumberToWord
             {9, "nine"},
         };
 
-        public NumberToWordConverter (int userInput)
+        public NumberToWordConverter(int userInput)
         {
             UserInput = userInput;
         }
-        public string NumberConverter(int lookupNumber)
+        public string NumberConverter(string lookupNumber)
+        {
+            char[] stringArray = lookupNumber.ToCharArray();
+            List<int> numberList = new List<int>();
+            foreach (char number in stringArray)
             {
-                if(lookupNumber<10)
-                {
-                return (singleNumbers[lookupNumber]);
-                } else if(lookupNumber<20)
-                {
-                    return (teens[lookupNumber]);
-                } else if(lookupNumber<100)
-                {
-                    int ones = lookupNumber % 10;
-                    string onesPlace = singleNumbers[ones];
-                    int tens = lookupNumber / 10;
-                    string tensPlace = tensPlaceValues[tens];
-                    return (tensPlace + "ty " + onesPlace);
-                }else if(lookupNumber<1000)
-                {
-                    int hundredsPlace = lookupNumber / 100;
-                    int tensPlace = (lookupNumber % 100) / 10;
-                    int onesPlace = (lookupNumber % 100) % 10;
-                    return (singleNumbers[hundredsPlace] + " hundred " + tensPlaceValues[tensPlace] + "ty " + singleNumbers[onesPlace]); 
-                }else if (lookupNumber<10000)
-                {
-                    int thousandsPlace = lookupNumber / 1000;
-                    int hundredsPlace = (lookupNumber % 1000)/100;
-                    int tensPlace = ((lookupNumber % 1000) % 100)/10;
-                    int onesPlace = ((lookupNumber % 1000) % 100) % 10;
-                     return (singleNumbers[thousandsPlace] + " thousand " + singleNumbers[hundredsPlace] + " hundred " + tensPlaceValues[tensPlace] + "ty " + singleNumbers[onesPlace]);
-                }
-                {
-                    return "That number/'s out of range";
-                }
+                int integer = (int)Char.GetNumericValue(number);
+                numberList.Add(integer);
             }
+        }
     }
     public class Program
     {
